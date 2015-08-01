@@ -1,0 +1,31 @@
+[15:12:52] [main/INFO]: Setting user: Player718
+[15:12:53] [Client thread/INFO]: LWJGL Version: 2.9.1
+[15:13:00] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:watchcraft
+[15:13:00] [Sound Library Loader/INFO]: Sound engine started
+[15:13:01] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[15:13:01] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[15:13:01] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:watchcraft
+[15:13:01] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[15:13:01] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[15:13:02] [Sound Library Loader/INFO]: Sound engine started
+[15:13:04] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[15:13:04] [Server thread/INFO]: Generating keypair
+[15:13:04] [Server thread/INFO]: Preparing start region for level 0
+[15:13:05] [Server thread/INFO]: Changing view distance to 12, from 10
+[15:13:05] [Server thread/INFO]: Player718[local:E:6bac93a4] logged in with entity id 236 at (184.91107391008413, 69.0, -181.19672216382747)
+[15:13:05] [Server thread/INFO]: Player718 joined the game
+[15:13:06] [Server thread/INFO]: Saving and pausing game...
+[15:13:06] [Server thread/INFO]: Saving chunks for level 'WatchCraft Testing'/Overworld
+[15:13:06] [Server thread/INFO]: Saving chunks for level 'WatchCraft Testing'/Nether
+[15:13:06] [Server thread/INFO]: Saving chunks for level 'WatchCraft Testing'/The End
+[15:13:06] [Server thread/INFO]: Player718 has just earned the achievement [Taking Inventory]
+[15:13:06] [Client thread/INFO]: [CHAT] Player718 has just earned the achievement [Taking Inventory]
+[15:13:23] [Client thread/INFO]: Stopping!
+[15:13:23] [Server thread/INFO]: Stopping server
+[15:13:23] [Server thread/INFO]: Saving players
+[15:13:23] [Server thread/INFO]: Saving worlds
+[15:13:23] [Server thread/INFO]: Saving chunks for level 'WatchCraft Testing'/Overworld
+[15:13:23] [Server thread/INFO]: Saving chunks for level 'WatchCraft Testing'/Nether
+[15:13:23] [Server thread/INFO]: Saving chunks for level 'WatchCraft Testing'/The End
+[15:13:23] [Client Shutdown Thread/INFO]: Stopping server
+[15:13:23] [Client Shutdown Thread/INFO]: Saving players
