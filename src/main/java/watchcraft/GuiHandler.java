@@ -4,6 +4,7 @@ import cpw.mods.fml.common.network.IGuiHandler;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
+import watchcraft.client.gui.GuiWatchBasic;
 import watchcraft.client.gui.GuiWatchInventory;
 import watchcraft.inventory.ContainerWatchInventory;
 import watchcraft.player.WCPlayerStats;
@@ -44,7 +45,7 @@ public class GuiHandler implements IGuiHandler {
 
         WCPlayerStats stats = WCPlayerStats.get(player);
 
-
+        System.out.println("Recieved client gui packet with id: " + ID);
 
         switch (ID)
         {

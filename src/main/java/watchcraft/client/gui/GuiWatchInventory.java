@@ -38,8 +38,6 @@ public class GuiWatchInventory extends InventoryEffectRenderer {
     protected void drawGuiContainerBackgroundLayer(float p_146976_1_, int p_146976_2_, int p_146976_3_) {
         GL11.glColor4f(1, 1, 1, 1);
         Minecraft.getMinecraft().getTextureManager().bindTexture(texture);
-        int cornerX = guiLeft;
-        int cornerY = guiTop;
-        drawTexturedModalRect(cornerX, cornerY, 0, 0, xSize, ySize);
+        drawTexturedModalRect(guiLeft, guiTop, 0, 0, xSize, ySize);
     }
 }

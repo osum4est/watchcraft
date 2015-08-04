@@ -9,7 +9,7 @@ import net.minecraft.item.ItemStack;
  */
 public class WatchInventory implements IInventory {
 
-    public ItemStack[] inventory = new ItemStack[27];
+    public ItemStack[] inventory = new ItemStack[1];
 
     public WatchInventory()
     {
@@ -23,7 +23,6 @@ public class WatchInventory implements IInventory {
 
     @Override
     public ItemStack getStackInSlot(int slot) {
-        System.out.println("Getting stack in slot");
         return inventory[slot];
     }
 
@@ -31,7 +30,6 @@ public class WatchInventory implements IInventory {
     public ItemStack decrStackSize(int slot, int quantity) {
         if (inventory[slot] != null)
         {
-            System.out.println("Took something from slot " + slot);
             if (inventory[slot].stackSize <= quantity)
             {
                 ItemStack stack = inventory[slot];
@@ -47,7 +45,6 @@ public class WatchInventory implements IInventory {
         }
         else
         {
-            System.out.println("Took something out of null slot");
             return null;
         }
     }
@@ -59,7 +56,6 @@ public class WatchInventory implements IInventory {
 
     @Override
     public void setInventorySlotContents(int slot, ItemStack itemStack) {
-        System.out.println("setInventorySlotContents");
         inventory[slot] = itemStack;
 
         if (itemStack != null && itemStack.stackSize > getInventoryStackLimit())

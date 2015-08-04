@@ -2,6 +2,7 @@ package watchcraft.player;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.world.World;
 import net.minecraftforge.common.IExtendedEntityProperties;
@@ -21,13 +22,14 @@ public class WCPlayerStats implements IExtendedEntityProperties {
     }
 
     @Override
-    public void saveNBTData(NBTTagCompound compound) {
+    public void saveNBTData(NBTTagCompound tag) {
+        watchInventory.inventory[0].writeToNBT(tag);
 
     }
 
     @Override
-    public void loadNBTData(NBTTagCompound compound) {
-
+    public void loadNBTData(NBTTagCompound tag) {
+        watchInventory.inventory[0] = ItemStack.loadItemStackFromNBT(tag);
     }
 
     @Override

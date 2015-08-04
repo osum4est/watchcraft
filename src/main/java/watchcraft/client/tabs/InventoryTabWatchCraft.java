@@ -17,7 +17,7 @@ public class InventoryTabWatchCraft extends AbstractTab {
 
     public InventoryTabWatchCraft()
     {
-        super(0, 0, 0, new ItemStack(Items.clock));
+        super(0, 0, 0, new ItemStack(WatchCraft.itemBasicWatch));
     }
 
     @Override

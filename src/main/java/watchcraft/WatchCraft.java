@@ -1,18 +1,27 @@
 package watchcraft;
 
+import api.player.model.ModelPlayerAPI;
+import api.player.render.RenderPlayerAPI;
 import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
+import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
+import watchcraft.client.gui.GuiWatchBasic;
 import watchcraft.common.WCProxyCommon;
+import watchcraft.items.ItemBasicWatch;
 import watchcraft.network.SimplePacket;
 import watchcraft.network.WCPacketHandler;
+import watchcraft.player.WCModelPlayerBase;
 import watchcraft.player.WCPlayerHandler;
+import watchcraft.player.WCRenderPlayerBase;
+import watchcraft.watch.WatchHandler;
 
 @Mod(modid = WatchCraft.MODID, version = WatchCraft.VERSION)
 public class WatchCraft
@@ -22,7 +31,9 @@ public class WatchCraft
 
 
     public static WCPlayerHandler playerHandler;
+    public static WatchHandler watchHandler;
 
+    public static Item itemBasicWatch;
 
     @SidedProxy(clientSide = "watchcraft.client.WCProxyClient", serverSide = "watchcraft.common.WCProxyCommon")
     public static WCProxyCommon proxy;
@@ -38,6 +49,14 @@ public class WatchCraft
 
         playerHandler = new WCPlayerHandler();
         MinecraftForge.EVENT_BUS.register(playerHandler);
+
+        watchHandler = new WatchHandler();
+
+        itemBasicWatch = new ItemBasicWatch("itemBasicWatch");
+        GameRegistry.registerItem(itemBasicWatch, itemBasicWatch.getUnlocalizedName());
+
+        RenderPlayerAPI.register(MODID, WCRenderPlayerBase.class);
+        ModelPlayerAPI.register(MODID, WCModelPlayerBase.class);
     }
 
     @EventHandler
@@ -53,5 +72,6 @@ public class WatchCraft
     public void postInit(FMLPostInitializationEvent event)
     {
         proxy.postInit(event);
+        MinecraftForge.EVENT_BUS.register(new GuiWatchBasic());
     }
 }
