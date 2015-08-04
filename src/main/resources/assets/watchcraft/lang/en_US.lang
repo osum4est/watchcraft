@@ -1,4 +1,5 @@
-item.itemBasicWatch.name=Basic Watch
+item.itemBasicWatchDigital.name=Basic Digital Watch
+item.itemBasicWatchAnalog.name=Basic Analog Watch
 
 key.viewWatch=View Watch
 key.categories.watchcraft=WatchCraft

@@ -1,41 +1,29 @@
-[21:22:02] [main/INFO]: Setting user: Player861
-[21:22:03] [Client thread/INFO]: LWJGL Version: 2.9.1
-[21:22:11] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:watchcraft
-[21:22:12] [Sound Library Loader/INFO]: Sound engine started
-[21:22:12] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[21:22:12] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[21:22:13] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:watchcraft
-[21:22:13] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[21:22:13] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[21:22:14] [Sound Library Loader/INFO]: Sound engine started
-[21:22:17] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[21:22:17] [Server thread/INFO]: Generating keypair
-[21:22:17] [Server thread/INFO]: Preparing start region for level 0
-[21:22:18] [Server thread/INFO]: Changing view distance to 12, from 10
-[21:22:18] [Server thread/INFO]: Player861[local:E:59a7be91] logged in with entity id 211 at (16.947583915678553, 70.0, 257.2019761182779)
-[21:22:18] [Server thread/INFO]: Player861 joined the game
-[21:22:32] [Server thread/INFO]: Player861 has just earned the achievement [Taking Inventory]
-[21:22:32] [Client thread/INFO]: [CHAT] Player861 has just earned the achievement [Taking Inventory]
-[21:22:39] [Server thread/INFO]: Saving and pausing game...
-[21:22:39] [Server thread/INFO]: Saving chunks for level 'WatchCraft Testing'/Overworld
-[21:22:39] [Server thread/INFO]: Saving chunks for level 'WatchCraft Testing'/Nether
-[21:22:39] [Server thread/INFO]: Saving chunks for level 'WatchCraft Testing'/The End
-[21:22:39] [Server thread/INFO]: Stopping server
-[21:22:39] [Server thread/INFO]: Saving players
-[21:22:39] [Server thread/INFO]: Saving worlds
-[21:22:39] [Server thread/INFO]: Saving chunks for level 'WatchCraft Testing'/Overworld
-[21:22:39] [Server thread/INFO]: Saving chunks for level 'WatchCraft Testing'/Nether
-[21:22:39] [Server thread/INFO]: Saving chunks for level 'WatchCraft Testing'/The End
-[21:22:45] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[21:22:45] [Server thread/INFO]: Generating keypair
-[21:22:45] [Server thread/INFO]: Preparing start region for level 0
-[21:22:45] [Server thread/INFO]: Changing view distance to 12, from 10
-[21:22:46] [Server thread/INFO]: Player861[local:E:8a86cde9] logged in with entity id 858 at (16.947583915678553, 70.0, 257.2019761182779)
-[21:22:46] [Server thread/INFO]: Player861 joined the game
-[21:23:30] [Client thread/INFO]: Stopping!
-[21:23:30] [Server thread/INFO]: Stopping server
-[21:23:30] [Server thread/INFO]: Saving players
-[21:23:30] [Server thread/INFO]: Saving worlds
-[21:23:30] [Server thread/INFO]: Saving chunks for level 'WatchCraft Testing'/Overworld
-[21:23:30] [Server thread/INFO]: Saving chunks for level 'WatchCraft Testing'/Nether
-[21:23:30] [Server thread/INFO]: Saving chunks for level 'WatchCraft Testing'/The End
+[12:29:19] [main/INFO]: Setting user: Player476
+[12:29:20] [Client thread/INFO]: LWJGL Version: 2.9.1
+[12:29:27] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:watchcraft
+[12:29:28] [Sound Library Loader/INFO]: Sound engine started
+[12:29:29] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[12:29:29] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[12:29:29] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:watchcraft
+[12:29:30] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[12:29:30] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[12:29:31] [Sound Library Loader/INFO]: Sound engine started
+[12:29:34] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[12:29:34] [Server thread/INFO]: Generating keypair
+[12:29:41] [Server thread/INFO]: Preparing start region for level 0
+[12:29:42] [Server thread/INFO]: Changing view distance to 12, from 10
+[12:29:43] [Server thread/INFO]: Player476[local:E:56da57bb] logged in with entity id 134 at (8.727918519355436, 69.0, 284.83357724303505)
+[12:29:43] [Server thread/INFO]: Player476 joined the game
+[12:29:46] [Server thread/INFO]: Player476 has just earned the achievement [Taking Inventory]
+[12:29:46] [Client thread/INFO]: [CHAT] Player476 has just earned the achievement [Taking Inventory]
+[12:29:54] [Server thread/INFO]: [Player476: Given [Basic Digital Watch] * 1 to Player476]
+[12:29:54] [Client thread/INFO]: [CHAT] Given [Basic Digital Watch] * 1 to Player476
+[12:29:54] [Server thread/INFO]: [Player476: Given [Basic Analog Watch] * 1 to Player476]
+[12:29:54] [Client thread/INFO]: [CHAT] Given [Basic Analog Watch] * 1 to Player476
+[12:30:30] [Client thread/INFO]: Stopping!
+[12:30:30] [Server thread/INFO]: Stopping server
+[12:30:30] [Server thread/INFO]: Saving players
+[12:30:30] [Server thread/INFO]: Saving worlds
+[12:30:30] [Server thread/INFO]: Saving chunks for level 'WatchCraft Testing'/Overworld
+[12:30:30] [Server thread/INFO]: Saving chunks for level 'WatchCraft Testing'/Nether
+[12:30:30] [Server thread/INFO]: Saving chunks for level 'WatchCraft Testing'/The End

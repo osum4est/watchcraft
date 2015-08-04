@@ -1,6 +1,9 @@
 package watchcraft.watch;
 
+import net.minecraft.client.Minecraft;
 import watchcraft.client.gui.GuiWatchBasic;
+import watchcraft.items.ItemWatch;
+import watchcraft.player.WCPlayerStats;
 
 /**
  * Created by osumf on 8/1/2015.
@@ -11,10 +14,12 @@ public class WatchHandler {
 
     public void openWatch()
     {
-        if (!isWatchOpen)
-            openWatchGui();
+        if (WCPlayerStats.getWatch(Minecraft.getMinecraft().thePlayer) != null) {
+            if (!isWatchOpen)
+                openWatchGui();
 
-        isWatchOpen = true;
+            isWatchOpen = true;
+        }
     }
 
     public void closeWatch()

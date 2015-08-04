@@ -15,7 +15,8 @@ import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
 import watchcraft.client.gui.GuiWatchBasic;
 import watchcraft.common.WCProxyCommon;
-import watchcraft.items.ItemBasicWatch;
+import watchcraft.items.ItemBasicWatchAnalog;
+import watchcraft.items.ItemBasicWatchDigital;
 import watchcraft.network.SimplePacket;
 import watchcraft.network.WCPacketHandler;
 import watchcraft.player.WCModelPlayerBase;
@@ -33,7 +34,8 @@ public class WatchCraft
     public static WCPlayerHandler playerHandler;
     public static WatchHandler watchHandler;
 
-    public static Item itemBasicWatch;
+    public static Item itemBasicWatchDigital;
+    public static Item itemBasicWatchAnalog;
 
     @SidedProxy(clientSide = "watchcraft.client.WCProxyClient", serverSide = "watchcraft.common.WCProxyCommon")
     public static WCProxyCommon proxy;
@@ -52,8 +54,10 @@ public class WatchCraft
 
         watchHandler = new WatchHandler();
 
-        itemBasicWatch = new ItemBasicWatch("itemBasicWatch");
-        GameRegistry.registerItem(itemBasicWatch, itemBasicWatch.getUnlocalizedName());
+        itemBasicWatchDigital = new ItemBasicWatchDigital("itemBasicWatchDigital");
+        GameRegistry.registerItem(itemBasicWatchDigital, itemBasicWatchDigital.getUnlocalizedName());
+        itemBasicWatchAnalog = new ItemBasicWatchAnalog("itemBasicWatchAnalog");
+        GameRegistry.registerItem(itemBasicWatchAnalog, itemBasicWatchAnalog.getUnlocalizedName());
 
         RenderPlayerAPI.register(MODID, WCRenderPlayerBase.class);
         ModelPlayerAPI.register(MODID, WCModelPlayerBase.class);
