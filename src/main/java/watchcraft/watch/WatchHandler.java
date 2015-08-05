@@ -1,7 +1,8 @@
 package watchcraft.watch;
 
 import net.minecraft.client.Minecraft;
-import watchcraft.client.gui.GuiWatchBasic;
+import net.minecraftforge.common.MinecraftForge;
+import watchcraft.client.gui.GuiWatch;
 import watchcraft.items.ItemWatch;
 import watchcraft.player.WCPlayerStats;
 
@@ -12,11 +13,14 @@ public class WatchHandler {
 
     boolean isWatchOpen = false;
 
+    private GuiWatch guiWatch;
+
     public void openWatch()
     {
-        if (WCPlayerStats.getWatch(Minecraft.getMinecraft().thePlayer) != null) {
+        ItemWatch watch = WCPlayerStats.getWatch(Minecraft.getMinecraft().thePlayer);
+        if (watch != null) {
             if (!isWatchOpen)
-                openWatchGui();
+                openWatchGui(watch);
 
             isWatchOpen = true;
         }
@@ -30,14 +34,16 @@ public class WatchHandler {
         isWatchOpen = false;
     }
 
-    private void openWatchGui()
+    private void openWatchGui(ItemWatch watch)
     {
         System.out.println("attempting to open watch gui");
-        GuiWatchBasic.show = true;
+        guiWatch = watch.getGui();
+        MinecraftForge.EVENT_BUS.register(guiWatch);
     }
 
     private void closeWatchGui()
     {
-        GuiWatchBasic.show = false;
+        MinecraftForge.EVENT_BUS.unregister(guiWatch);
+        guiWatch = null;
     }
 }

@@ -5,7 +5,7 @@ Time: 8/2/15 1:25 PM
 Description: Initializing game
 
 java.lang.NullPointerException: Initializing game
-	at watchcraft.client.gui.GuiWatchBasic.<init>(GuiWatchBasic.java:28)
+	at watchcraft.client.gui.GuiWatchBasicDigital.<init>(GuiWatchBasic.java:28)
 	at watchcraft.WatchCraft.postInit(WatchCraft.java:75)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -58,7 +58,7 @@ A detailed walkthrough of the error, its code path and all known details is as f
 
 -- Head --
 Stacktrace:
-	at watchcraft.client.gui.GuiWatchBasic.<init>(GuiWatchBasic.java:28)
+	at watchcraft.client.gui.GuiWatchBasicDigital.<init>(GuiWatchBasic.java:28)
 	at watchcraft.WatchCraft.postInit(WatchCraft.java:75)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)

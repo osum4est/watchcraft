@@ -1,29 +1,56 @@
-[12:29:19] [main/INFO]: Setting user: Player476
-[12:29:20] [Client thread/INFO]: LWJGL Version: 2.9.1
-[12:29:27] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:watchcraft
-[12:29:28] [Sound Library Loader/INFO]: Sound engine started
-[12:29:29] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[12:29:29] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[12:29:29] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:watchcraft
-[12:29:30] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[12:29:30] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[12:29:31] [Sound Library Loader/INFO]: Sound engine started
-[12:29:34] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[12:29:34] [Server thread/INFO]: Generating keypair
-[12:29:41] [Server thread/INFO]: Preparing start region for level 0
-[12:29:42] [Server thread/INFO]: Changing view distance to 12, from 10
-[12:29:43] [Server thread/INFO]: Player476[local:E:56da57bb] logged in with entity id 134 at (8.727918519355436, 69.0, 284.83357724303505)
-[12:29:43] [Server thread/INFO]: Player476 joined the game
-[12:29:46] [Server thread/INFO]: Player476 has just earned the achievement [Taking Inventory]
-[12:29:46] [Client thread/INFO]: [CHAT] Player476 has just earned the achievement [Taking Inventory]
-[12:29:54] [Server thread/INFO]: [Player476: Given [Basic Digital Watch] * 1 to Player476]
-[12:29:54] [Client thread/INFO]: [CHAT] Given [Basic Digital Watch] * 1 to Player476
-[12:29:54] [Server thread/INFO]: [Player476: Given [Basic Analog Watch] * 1 to Player476]
-[12:29:54] [Client thread/INFO]: [CHAT] Given [Basic Analog Watch] * 1 to Player476
-[12:30:30] [Client thread/INFO]: Stopping!
-[12:30:30] [Server thread/INFO]: Stopping server
-[12:30:30] [Server thread/INFO]: Saving players
-[12:30:30] [Server thread/INFO]: Saving worlds
-[12:30:30] [Server thread/INFO]: Saving chunks for level 'WatchCraft Testing'/Overworld
-[12:30:30] [Server thread/INFO]: Saving chunks for level 'WatchCraft Testing'/Nether
-[12:30:30] [Server thread/INFO]: Saving chunks for level 'WatchCraft Testing'/The End
+[14:18:45] [main/INFO]: Setting user: Player958
+[14:18:47] [Client thread/INFO]: LWJGL Version: 2.9.1
+[14:18:54] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:watchcraft
+[14:18:56] [Sound Library Loader/INFO]: Sound engine started
+[14:18:56] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[14:18:56] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[14:18:56] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:watchcraft
+[14:18:57] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[14:18:57] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[14:18:57] [Sound Library Loader/INFO]: Sound engine started
+[14:20:53] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[14:20:53] [Server thread/INFO]: Generating keypair
+[14:20:53] [Server thread/INFO]: Preparing start region for level 0
+[14:20:54] [Server thread/INFO]: Changing view distance to 12, from 10
+[14:20:54] [Server thread/INFO]: Player958[local:E:6ee6c3b2] logged in with entity id 142 at (6.7788353579814045, 70.0, 249.08885315249648)
+[14:20:54] [Server thread/INFO]: Player958 joined the game
+[14:20:58] [Server thread/INFO]: Player958 has just earned the achievement [Taking Inventory]
+[14:20:58] [Client thread/INFO]: [CHAT] Player958 has just earned the achievement [Taking Inventory]
+[14:21:00] [Client thread/WARN]: Failed to load texture: watchcraft:texture/gui/pixel.png
+java.io.FileNotFoundException: watchcraft:texture/gui/pixel.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:35) ~[SimpleTexture.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:45) [TextureManager.class:?]
+	at watchcraft.client.gui.GuiWatchBasicAnalog.drawScreen(GuiWatchBasicAnalog.java:29) [GuiWatchBasicAnalog.class:?]
+	at watchcraft.client.gui.GuiWatch.onRenderGameOverlay(GuiWatch.java:85) [GuiWatch.class:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler_22_GuiWatch_onRenderGameOverlay_RenderGameOverlayEvent.invoke(.dynamic) [?:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:54) [ASMEventHandler.class:?]
+	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:138) [EventBus.class:?]
+	at net.minecraftforge.client.GuiIngameForge.pre(GuiIngameForge.java:901) [GuiIngameForge.class:?]
+	at net.minecraftforge.client.GuiIngameForge.renderGameOverlay(GuiIngameForge.java:105) [GuiIngameForge.class:?]
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1114) [EntityRenderer.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1067) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:962) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
+	at GradleStart.main(Unknown Source) [start/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140) [idea_rt.jar:?]
+[14:21:13] [Client thread/INFO]: Stopping!
+[14:21:13] [Server thread/INFO]: Stopping server
+[14:21:13] [Server thread/INFO]: Saving players
+[14:21:13] [Server thread/INFO]: Saving worlds
+[14:21:13] [Server thread/INFO]: Saving chunks for level 'WatchCraft Testing'/Overworld
+[14:21:13] [Server thread/INFO]: Saving chunks for level 'WatchCraft Testing'/Nether
+[14:21:13] [Server thread/INFO]: Saving chunks for level 'WatchCraft Testing'/The End

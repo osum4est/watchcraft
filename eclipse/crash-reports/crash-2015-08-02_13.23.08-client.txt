@@ -5,8 +5,8 @@ Time: 8/2/15 1:23 PM
 Description: Unexpected error
 
 java.lang.NullPointerException: Unexpected error
-	at watchcraft.client.gui.GuiWatchBasic.drawScreen(GuiWatchBasic.java:42)
-	at watchcraft.client.gui.GuiWatchBasic.onRenderGameOverlay(GuiWatchBasic.java:52)
+	at watchcraft.client.gui.GuiWatchBasicDigital.drawScreen(GuiWatchBasic.java:42)
+	at watchcraft.client.gui.GuiWatchBasicDigital.onRenderGameOverlay(GuiWatchBasic.java:52)
 	at cpw.mods.fml.common.eventhandler.ASMEventHandler_12_GuiWatchBasic_onRenderGameOverlay_RenderGameOverlayEvent.invoke(.dynamic)
 	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:54)
 	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:138)
@@ -36,8 +36,8 @@ A detailed walkthrough of the error, its code path and all known details is as f
 
 -- Head --
 Stacktrace:
-	at watchcraft.client.gui.GuiWatchBasic.drawScreen(GuiWatchBasic.java:42)
-	at watchcraft.client.gui.GuiWatchBasic.onRenderGameOverlay(GuiWatchBasic.java:52)
+	at watchcraft.client.gui.GuiWatchBasicDigital.drawScreen(GuiWatchBasic.java:42)
+	at watchcraft.client.gui.GuiWatchBasicDigital.onRenderGameOverlay(GuiWatchBasic.java:52)
 	at cpw.mods.fml.common.eventhandler.ASMEventHandler_12_GuiWatchBasic_onRenderGameOverlay_RenderGameOverlayEvent.invoke(.dynamic)
 	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:54)
 	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:138)

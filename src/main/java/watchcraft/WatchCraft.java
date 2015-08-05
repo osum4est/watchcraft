@@ -13,7 +13,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
-import watchcraft.client.gui.GuiWatchBasic;
+import watchcraft.client.gui.GuiWatchBasicDigital;
 import watchcraft.common.WCProxyCommon;
 import watchcraft.items.ItemBasicWatchAnalog;
 import watchcraft.items.ItemBasicWatchDigital;
@@ -76,6 +76,5 @@ public class WatchCraft
     public void postInit(FMLPostInitializationEvent event)
     {
         proxy.postInit(event);
-        MinecraftForge.EVENT_BUS.register(new GuiWatchBasic());
     }
 }

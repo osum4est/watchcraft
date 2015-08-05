@@ -4,12 +4,9 @@ import cpw.mods.fml.common.network.IGuiHandler;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
-import watchcraft.client.gui.GuiWatchBasic;
 import watchcraft.client.gui.GuiWatchInventory;
 import watchcraft.inventory.ContainerWatchInventory;
 import watchcraft.player.WCPlayerStats;
-
-import java.util.HashMap;
 
 /**
  * Created by osumf on 8/1/2015.
