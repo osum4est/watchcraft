@@ -20,6 +20,7 @@ public abstract class GuiWatch extends Gui {
     public static final double ROOTTHREEOVERTWO = .866D;
 
     public ResourceLocation texture;
+    public ResourceLocation pixel = new ResourceLocation("watchcraft", "textures/gui/pixel.png");
 
     public Minecraft mc;
     public int screenX;
@@ -64,6 +65,7 @@ public abstract class GuiWatch extends Gui {
 
     public void drawLine(int x1, int y1, int x2, int y2, float width, int color)
     {
+        mc.getTextureManager().bindTexture(pixel);
         Tessellator t = Tessellator.instance;
         t.startDrawing(GL11.GL_LINES);
         GL11.glLineWidth(width);
