@@ -1,5 +1,7 @@
 item.itemBasicWatchDigital.name=Basic Digital Watch
 item.itemBasicWatchAnalog.name=Basic Analog Watch
 
+tile.blockWatchmakersWorkbench.name=Watchmaker's Workbench
+
 key.viewWatch=View Watch
 key.categories.watchcraft=WatchCraft

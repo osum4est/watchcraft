@@ -11,8 +11,11 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
+import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
+import watchcraft.block.BlockWatchmakersWorkbench;
+import watchcraft.block.te.TEWatchmakersWorkbench;
 import watchcraft.client.gui.GuiWatchBasicDigital;
 import watchcraft.common.WCProxyCommon;
 import watchcraft.items.ItemBasicWatchAnalog;
@@ -24,11 +27,12 @@ import watchcraft.player.WCPlayerHandler;
 import watchcraft.player.WCRenderPlayerBase;
 import watchcraft.watch.WatchHandler;
 
-@Mod(modid = WatchCraft.MODID, version = WatchCraft.VERSION)
+@Mod(modid = WatchCraft.MODID, version = WatchCraft.VERSION, name = WatchCraft.NAME)
 public class WatchCraft
 {
     public static final String MODID = "watchcraft";
     public static final String VERSION = "1.0";
+    public static final String NAME = "Watchcraft";
 
 
     public static WCPlayerHandler playerHandler;
@@ -36,6 +40,8 @@ public class WatchCraft
 
     public static Item itemBasicWatchDigital;
     public static Item itemBasicWatchAnalog;
+
+    public static Block blockWatchmakersWorkbench;
 
     @SidedProxy(clientSide = "watchcraft.client.WCProxyClient", serverSide = "watchcraft.common.WCProxyCommon")
     public static WCProxyCommon proxy;
@@ -58,6 +64,10 @@ public class WatchCraft
         GameRegistry.registerItem(itemBasicWatchDigital, itemBasicWatchDigital.getUnlocalizedName());
         itemBasicWatchAnalog = new ItemBasicWatchAnalog("itemBasicWatchAnalog");
         GameRegistry.registerItem(itemBasicWatchAnalog, itemBasicWatchAnalog.getUnlocalizedName());
+
+        blockWatchmakersWorkbench = new BlockWatchmakersWorkbench("blockWatchmakersWorkbench");
+        GameRegistry.registerBlock(blockWatchmakersWorkbench, blockWatchmakersWorkbench.getUnlocalizedName());
+        GameRegistry.registerTileEntity(TEWatchmakersWorkbench.class, "teWatchmakersWorkbench");
 
         RenderPlayerAPI.register(MODID, WCRenderPlayerBase.class);
         ModelPlayerAPI.register(MODID, WCModelPlayerBase.class);

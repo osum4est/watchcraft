@@ -89,5 +89,5 @@ public abstract class GuiWatch extends Gui {
         GL11.glColor4f(1, 1, 1, 1);
     }
 
-    
+
 }

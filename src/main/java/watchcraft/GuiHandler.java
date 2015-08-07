@@ -3,9 +3,13 @@ package watchcraft;
 import cpw.mods.fml.common.network.IGuiHandler;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
+import watchcraft.block.te.TEWatchmakersWorkbench;
 import watchcraft.client.gui.GuiWatchInventory;
+import watchcraft.client.gui.GuiWatchmakersWorkbench;
 import watchcraft.inventory.ContainerWatchInventory;
+import watchcraft.inventory.ContainerWatchmakersWorkbench;
 import watchcraft.player.WCPlayerStats;
 
 /**
@@ -23,15 +27,15 @@ public class GuiHandler implements IGuiHandler {
 
         WCPlayerStats stats = WCPlayerStats.get(player);
 
-
-        if (stats == null)
-            System.out.println("STATS IS FREAKING NULL");
-
         switch (ID)
         {
             case 0:
                 System.out.println("Opening conatiner on server");
                 return new ContainerWatchInventory(player, stats.watchInventory);
+            case 1:
+                TileEntity te = world.getTileEntity(x, y, z);
+                if (te != null && te instanceof TEWatchmakersWorkbench)
+                    return new ContainerWatchmakersWorkbench(player, (TEWatchmakersWorkbench)te);
         }
 
         return null;
@@ -48,6 +52,10 @@ public class GuiHandler implements IGuiHandler {
         {
             case 0:
                 return new GuiWatchInventory(player, stats.watchInventory);
+            case 1:
+                TileEntity te = world.getTileEntity(x, y, z);
+                if (te != null && te instanceof TEWatchmakersWorkbench)
+                    return new GuiWatchmakersWorkbench(player.inventory, (TEWatchmakersWorkbench)te);
         }
 
         return null;

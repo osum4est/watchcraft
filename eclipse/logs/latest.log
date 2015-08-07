@@ -1,56 +1,23 @@
-[14:11:39] [main/INFO]: Setting user: Player682
-[14:11:42] [Client thread/INFO]: LWJGL Version: 2.9.1
-[14:11:50] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:watchcraft
-[14:11:52] [Sound Library Loader/INFO]: Sound engine started
-[14:11:54] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[14:11:54] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[14:11:54] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:watchcraft
-[14:11:55] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[14:11:55] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[14:11:55] [Sound Library Loader/INFO]: Sound engine started
-[14:11:58] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[14:11:58] [Server thread/INFO]: Generating keypair
-[14:11:58] [Server thread/INFO]: Preparing start region for level 0
-[14:11:59] [Server thread/INFO]: Changing view distance to 12, from 10
-[14:11:59] [Server thread/INFO]: Player682[local:E:87436c8a] logged in with entity id 260 at (7.266432306039113, 70.0, 255.69993166782518)
-[14:11:59] [Server thread/INFO]: Player682 joined the game
-[14:12:03] [Server thread/INFO]: Player682 has just earned the achievement [Taking Inventory]
-[14:12:03] [Client thread/INFO]: [CHAT] Player682 has just earned the achievement [Taking Inventory]
-[14:12:13] [Server thread/INFO]: Saving and pausing game...
-[14:12:13] [Server thread/INFO]: Saving chunks for level 'WatchCraft Testing'/Overworld
-[14:12:13] [Server thread/INFO]: Saving chunks for level 'WatchCraft Testing'/Nether
-[14:12:13] [Server thread/INFO]: Saving chunks for level 'WatchCraft Testing'/The End
-[14:12:13] [Server thread/INFO]: Stopping server
-[14:12:13] [Server thread/INFO]: Saving players
-[14:12:13] [Server thread/INFO]: Saving worlds
-[14:12:13] [Server thread/INFO]: Saving chunks for level 'WatchCraft Testing'/Overworld
-[14:12:13] [Server thread/INFO]: Saving chunks for level 'WatchCraft Testing'/Nether
-[14:12:13] [Server thread/INFO]: Saving chunks for level 'WatchCraft Testing'/The End
-[14:12:23] [Client thread/INFO]: Deleting level WatchCraft Testing
-[14:12:23] [Client thread/INFO]: Attempt 1...
-[14:12:34] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[14:12:34] [Server thread/INFO]: Generating keypair
-[14:12:35] [Server thread/INFO]: Converting map!
-[14:12:35] [Server thread/INFO]: Scanning folders...
-[14:12:35] [Server thread/INFO]: Total conversion count is 0
-[14:12:35] [Server thread/INFO]: Preparing start region for level 0
-[14:12:36] [Server thread/INFO]: Preparing spawn area: 20%
-[14:12:37] [Server thread/INFO]: Preparing spawn area: 44%
-[14:12:38] [Server thread/INFO]: Preparing spawn area: 69%
-[14:12:39] [Server thread/INFO]: Preparing spawn area: 99%
-[14:12:39] [Server thread/INFO]: Changing view distance to 12, from 10
-[14:12:39] [Server thread/INFO]: Player682[local:E:9950127c] logged in with entity id 710 at (219.5, 64.0, 226.5)
-[14:12:39] [Server thread/INFO]: Player682 joined the game
-[14:12:42] [Server thread/INFO]: Player682 has just earned the achievement [Taking Inventory]
-[14:12:42] [Client thread/INFO]: [CHAT] Player682 has just earned the achievement [Taking Inventory]
-[14:12:57] [Server thread/INFO]: [Player682: Given [Basic Analog Watch] * 1 to Player682]
-[14:12:57] [Client thread/INFO]: [CHAT] Given [Basic Analog Watch] * 1 to Player682
-[14:17:07] [Server thread/INFO]: [Player682: Given [Basic Digital Watch] * 1 to Player682]
-[14:17:07] [Client thread/INFO]: [CHAT] Given [Basic Digital Watch] * 1 to Player682
-[14:21:29] [Client thread/INFO]: Stopping!
-[14:21:29] [Server thread/INFO]: Stopping server
-[14:21:29] [Server thread/INFO]: Saving players
-[14:21:29] [Server thread/INFO]: Saving worlds
-[14:21:29] [Server thread/INFO]: Saving chunks for level 'Watchcraft Testing'/Overworld
-[14:21:29] [Server thread/INFO]: Saving chunks for level 'Watchcraft Testing'/Nether
-[14:21:29] [Server thread/INFO]: Saving chunks for level 'Watchcraft Testing'/The End
+[15:31:08] [main/INFO]: Setting user: Player245
+[15:31:10] [Client thread/INFO]: LWJGL Version: 2.9.1
+[15:31:18] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Watchcraft
+[15:31:19] [Sound Library Loader/INFO]: Sound engine started
+[15:31:20] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[15:31:20] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[15:31:20] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Watchcraft
+[15:31:21] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[15:31:21] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[15:31:21] [Sound Library Loader/INFO]: Sound engine started
+[15:31:27] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[15:31:27] [Server thread/INFO]: Generating keypair
+[15:31:27] [Server thread/INFO]: Preparing start region for level 0
+[15:31:28] [Server thread/INFO]: Changing view distance to 12, from 10
+[15:31:28] [Server thread/INFO]: Player245[local:E:f9d5a1c7] logged in with entity id 146 at (17.15505719233027, 92.0, -6.966427850804485)
+[15:31:28] [Server thread/INFO]: Player245 joined the game
+[15:31:35] [Client thread/INFO]: Stopping!
+[15:31:35] [Server thread/INFO]: Stopping server
+[15:31:35] [Server thread/INFO]: Saving players
+[15:31:35] [Server thread/INFO]: Saving worlds
+[15:31:35] [Server thread/INFO]: Saving chunks for level 'Watchcraft Testing'/Overworld
+[15:31:35] [Server thread/INFO]: Saving chunks for level 'Watchcraft Testing'/Nether
+[15:31:35] [Server thread/INFO]: Saving chunks for level 'Watchcraft Testing'/The End
