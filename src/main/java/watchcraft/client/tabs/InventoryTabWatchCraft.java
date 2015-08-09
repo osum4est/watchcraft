@@ -27,6 +27,8 @@ public class InventoryTabWatchCraft extends AbstractTab {
 
     }
 
+
+
     @Override
     public boolean shouldAddToList() {
         return true;

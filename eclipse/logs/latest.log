@@ -1,23 +1,27 @@
-[15:31:08] [main/INFO]: Setting user: Player245
-[15:31:10] [Client thread/INFO]: LWJGL Version: 2.9.1
-[15:31:18] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Watchcraft
-[15:31:19] [Sound Library Loader/INFO]: Sound engine started
-[15:31:20] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[15:31:20] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[15:31:20] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Watchcraft
-[15:31:21] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[15:31:21] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[15:31:21] [Sound Library Loader/INFO]: Sound engine started
-[15:31:27] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[15:31:27] [Server thread/INFO]: Generating keypair
-[15:31:27] [Server thread/INFO]: Preparing start region for level 0
-[15:31:28] [Server thread/INFO]: Changing view distance to 12, from 10
-[15:31:28] [Server thread/INFO]: Player245[local:E:f9d5a1c7] logged in with entity id 146 at (17.15505719233027, 92.0, -6.966427850804485)
-[15:31:28] [Server thread/INFO]: Player245 joined the game
-[15:31:35] [Client thread/INFO]: Stopping!
-[15:31:35] [Server thread/INFO]: Stopping server
-[15:31:35] [Server thread/INFO]: Saving players
-[15:31:35] [Server thread/INFO]: Saving worlds
-[15:31:35] [Server thread/INFO]: Saving chunks for level 'Watchcraft Testing'/Overworld
-[15:31:35] [Server thread/INFO]: Saving chunks for level 'Watchcraft Testing'/Nether
-[15:31:35] [Server thread/INFO]: Saving chunks for level 'Watchcraft Testing'/The End
+[18:58:07] [main/INFO]: Setting user: Player350
+[18:58:08] [Client thread/INFO]: LWJGL Version: 2.9.1
+[18:58:15] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Watchcraft
+[18:58:16] [Sound Library Loader/INFO]: Sound engine started
+[18:58:16] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[18:58:16] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[18:58:16] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Watchcraft
+[18:58:17] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[18:58:17] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[18:58:17] [Sound Library Loader/INFO]: Sound engine started
+[18:58:19] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[18:58:19] [Server thread/INFO]: Generating keypair
+[18:58:20] [Server thread/INFO]: Preparing start region for level 0
+[18:58:20] [Server thread/INFO]: Changing view distance to 12, from 10
+[18:58:21] [Server thread/INFO]: Player350[local:E:f22b2c8d] logged in with entity id 133 at (36.25423248151301, 64.0, -66.63869097349226)
+[18:58:21] [Server thread/INFO]: Player350 joined the game
+[18:58:37] [Server thread/INFO]: Saving and pausing game...
+[18:58:37] [Server thread/INFO]: Saving chunks for level 'Watchcraft Testing'/Overworld
+[18:58:37] [Server thread/INFO]: Saving chunks for level 'Watchcraft Testing'/Nether
+[18:58:37] [Server thread/INFO]: Saving chunks for level 'Watchcraft Testing'/The End
+[18:58:38] [Server thread/INFO]: Stopping server
+[18:58:38] [Server thread/INFO]: Saving players
+[18:58:38] [Server thread/INFO]: Saving worlds
+[18:58:38] [Server thread/INFO]: Saving chunks for level 'Watchcraft Testing'/Overworld
+[18:58:38] [Server thread/INFO]: Saving chunks for level 'Watchcraft Testing'/Nether
+[18:58:38] [Server thread/INFO]: Saving chunks for level 'Watchcraft Testing'/The End
+[18:58:39] [Client thread/INFO]: Stopping!

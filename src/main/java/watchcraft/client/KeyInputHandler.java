@@ -6,6 +6,7 @@ import net.minecraft.client.Minecraft;
 import watchcraft.WatchCraft;
 import watchcraft.player.WCModelPlayerBase;
 import watchcraft.player.WCPlayerStats;
+import watchcraft.player.WCRenderPlayerBase;
 import watchcraft.watch.WatchHandler;
 
 /**
@@ -19,67 +20,67 @@ public class KeyInputHandler {
         {
             //System.out.println("Viewing watch...");
             //if (Minecraft.getMinecraft().thePlayer.getExtendedProperties(WCPlayerStats.PROP_NAME).)
-            WCModelPlayerBase.isViewingWatch = true;
+            WatchHandler.isViewingWatch = true;
         }
         else
         {
             //System.out.println("Stopped viewing watch...");
-            WCModelPlayerBase.isViewingWatch = false;
+            WatchHandler.isViewingWatch = false;
         }
 
 
 
         if(KeyBindings.txp.isPressed())
         {
-            WCModelPlayerBase.txp = true;
+            WCRenderPlayerBase.txp = true;
         }
         if(KeyBindings.txn.isPressed())
         {
-            WCModelPlayerBase.txn = true;
+            WCRenderPlayerBase.txn = true;
         }
         if(KeyBindings.typ.isPressed())
         {
-            WCModelPlayerBase.typ = true;
+            WCRenderPlayerBase.typ = true;
         }
         if(KeyBindings.tyn.isPressed())
         {
-            WCModelPlayerBase.tyn = true;
+            WCRenderPlayerBase.tyn = true;
         }
         if(KeyBindings.tzp.isPressed())
         {
-            WCModelPlayerBase.tzp = true;
+            WCRenderPlayerBase.tzp = true;
         }
         if(KeyBindings.tzn.isPressed())
         {
-            WCModelPlayerBase.tzn = true;
+            WCRenderPlayerBase.tzn = true;
         }
         if(KeyBindings.rxp.isPressed())
         {
-            WCModelPlayerBase.rxp = true;
+            WCRenderPlayerBase.rxp = true;
         }
         if(KeyBindings.ryp.isPressed())
         {
-            WCModelPlayerBase.ryp = true;
+            WCRenderPlayerBase.ryp = true;
         }
         if(KeyBindings.rzp.isPressed())
         {
-            WCModelPlayerBase.rzp = true;
+            WCRenderPlayerBase.rzp = true;
         }
         if(KeyBindings.rxn.isPressed())
         {
-            WCModelPlayerBase.rxn = true;
+            WCRenderPlayerBase.rxn = true;
         }
         if(KeyBindings.ryn.isPressed())
         {
-            WCModelPlayerBase.ryn = true;
+            WCRenderPlayerBase.ryn = true;
         }
         if(KeyBindings.rzn.isPressed())
         {
-            WCModelPlayerBase.rzn = true;
+            WCRenderPlayerBase.rzn = true;
         }
         if(KeyBindings.reset.isPressed())
         {
-            WCModelPlayerBase.reset = true;
+            WCRenderPlayerBase.reset = true;
         }
     }
 }

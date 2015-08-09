@@ -37,6 +37,7 @@ public class GuiWatchBasicAnalog extends GuiWatch {
 
     public void drawTimeNumbers(int radius)
     {
+        GL11.glTranslatef(0, 0, -1f);
         drawCenteredStringNoShadow("12", 0, -radius, 0x404040);
         drawCenteredStringNoShadow("1", (int)(ONEHALF * radius), (int)(ROOTTHREEOVERTWO * -radius), 0x404040);
         drawCenteredStringNoShadow("2", (int)(ROOTTHREEOVERTWO * radius), (int)(ONEHALF * -radius), 0x404040);

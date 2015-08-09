@@ -11,39 +11,55 @@ import watchcraft.player.WCPlayerStats;
  */
 public class WatchHandler {
 
-    boolean isWatchOpen = false;
 
-    private GuiWatch guiWatch;
+    public static boolean isViewingWatch;
+    public static ItemWatch watch = null;
 
-    public void openWatch()
+    //boolean isWatchOpen = false;
+
+    //private GuiWatch guiWatch;
+
+//    public void openWatch()
+//    {
+//        ItemWatch watch = WCPlayerStats.getWatch(Minecraft.getMinecraft().thePlayer);
+//        if (watch != null) {
+//            if (!isWatchOpen)
+//                openWatchGui(watch);
+//
+//            isWatchOpen = true;
+//        }
+//    }
+
+    public void updateWornWatch()
     {
-        ItemWatch watch = WCPlayerStats.getWatch(Minecraft.getMinecraft().thePlayer);
-        if (watch != null) {
-            if (!isWatchOpen)
-                openWatchGui(watch);
-
-            isWatchOpen = true;
-        }
+        wearWatch(WCPlayerStats.getWatch(Minecraft.getMinecraft().thePlayer));
     }
 
-    public void closeWatch()
+    public void wearWatch(ItemWatch watch)
     {
-        if(isWatchOpen)
-            closeWatchGui();
-
-        isWatchOpen = false;
+        if (watch == null)
+            System.out.println("Watch is null");
+        WatchHandler.watch = watch;
     }
 
-    private void openWatchGui(ItemWatch watch)
-    {
-        System.out.println("attempting to open watch gui");
-        guiWatch = watch.getGui();
-        MinecraftForge.EVENT_BUS.register(guiWatch);
-    }
-
-    private void closeWatchGui()
-    {
-        MinecraftForge.EVENT_BUS.unregister(guiWatch);
-        guiWatch = null;
-    }
+//    public void closeWatch()
+//    {
+//        if(isWatchOpen)
+//            closeWatchGui();
+//
+//        isWatchOpen = false;
+//    }
+//
+//    private void openWatchGui(ItemWatch watch)
+//    {
+//        System.out.println("attempting to open watch gui");
+//        guiWatch = watch.getGui();
+//        MinecraftForge.EVENT_BUS.register(guiWatch);
+//    }
+//
+//    private void closeWatchGui()
+//    {
+//        MinecraftForge.EVENT_BUS.unregister(guiWatch);
+//        guiWatch = null;
+//    }
 }

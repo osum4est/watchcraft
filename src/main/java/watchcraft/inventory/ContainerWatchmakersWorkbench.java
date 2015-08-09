@@ -26,13 +26,13 @@ public class ContainerWatchmakersWorkbench extends Container {
         {
             for (int row = 0; row < 9; row++)
             {
-                addSlotToContainer(new Slot(inventoryPlayer, row + column * 9 + 9, 48 + row * 18, 174 + column * 18));
+                addSlotToContainer(new Slot(inventoryPlayer, row + column * 9 + 9, 9 + row * 18, 84 + column * 18));
             }
         }
 
         for (int column = 0; column < 9; column++)
         {
-            addSlotToContainer(new Slot(inventoryPlayer, column, 48 + column * 18, 232));
+            addSlotToContainer(new Slot(inventoryPlayer, column, 8 + column * 18, 142));
         }
     }
 

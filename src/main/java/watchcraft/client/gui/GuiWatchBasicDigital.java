@@ -32,6 +32,8 @@ public class GuiWatchBasicDigital extends GuiWatch {
         String time;
         time  = LocalDateTime.now().format(DateTimeFormatter.ofPattern("h:mm"));
 
+        GL11.glTranslatef(0, 0, -1f);
+
         GL11.glScalef(1.6f, 1.6f, 1);
         mc.fontRenderer.drawString(time, (int) ((screenX / 1.6f) - mc.fontRenderer.getStringWidth(time) / 2), (int) ((screenY - 25) / 1.6f), 0x404040);
         GL11.glScalef(.625f, .625f, 1);

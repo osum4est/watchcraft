@@ -3,6 +3,8 @@ package watchcraft.player;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
+import watchcraft.WatchCraft;
+import watchcraft.items.ItemWatch;
 
 /**
  * Created by osumf on 7/31/2015.
@@ -28,6 +30,7 @@ public class WatchInventory implements IInventory {
 
     @Override
     public ItemStack decrStackSize(int slot, int quantity) {
+        WatchCraft.watchHandler.updateWornWatch();
         if (inventory[slot] != null)
         {
             if (inventory[slot].stackSize <= quantity)
@@ -47,6 +50,8 @@ public class WatchInventory implements IInventory {
         {
             return null;
         }
+
+
     }
 
     @Override
@@ -62,6 +67,7 @@ public class WatchInventory implements IInventory {
         {
             itemStack.stackSize = getInventoryStackLimit();
         }
+        WatchCraft.watchHandler.updateWornWatch();
     }
 
     @Override

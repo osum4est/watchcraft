@@ -24,8 +24,8 @@ public class GuiWatchmakersWorkbench extends GuiContainer {
     {
         super(new ContainerWatchmakersWorkbench(player.player, teWatchmakersWorkbench));
 
-        xSize = 256;
-        ySize = 256;
+        xSize = 176;
+        ySize = 166;
     }
 
     @Override

@@ -5,14 +5,13 @@ import api.player.model.ModelPlayerBase;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.MathHelper;
+import org.lwjgl.opengl.GL11;
 import watchcraft.WatchCraft;
 
 /**
  * Created by osumf on 8/1/2015.
  */
 public class WCModelPlayerBase extends ModelPlayerBase {
-
-    public static boolean isViewingWatch;
 
     public static float offsetX = -.4f;
     public static float offsetY = .3f;
@@ -45,9 +44,11 @@ public class WCModelPlayerBase extends ModelPlayerBase {
     }
 
     float moveSpeed = .1f;
-    @Override
-    public void setRotationAngles(float v, float v1, float v2, float v3, float v4, float v5, Entity entity) {
 
+    /*
+    @Override
+    public void render(Entity entity, float v, float v1, float v2, float v3, float v4, float v5) {
+        super.render(entity, v, v1, v2, v3, v4, v5);
         if (Minecraft.getMinecraft().gameSettings.thirdPersonView == 0) {
             if (isViewingWatch) {
                 modelPlayer.bipedRightArm.offsetX = lerp(modelPlayer.bipedRightArm.offsetX, offsetX, moveSpeed);
@@ -78,6 +79,12 @@ public class WCModelPlayerBase extends ModelPlayerBase {
         }
         else
             super.setRotationAngles(v, v1, v2, v3, v4, v5, entity);
+    }
+
+    @Override
+    public void setRotationAngles(float v, float v1, float v2, float v3, float v4, float v5, Entity entity) {
+
+
     }
 
 

@@ -10,6 +10,7 @@ import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import org.lwjgl.opengl.GL11;
 
 import java.awt.*;
+import java.util.function.DoubleToIntFunction;
 
 /**
  * Created by osumf on 8/4/2015.
@@ -59,8 +60,10 @@ public abstract class GuiWatch extends Gui {
 
     public void setScreenSize()
     {
-        screenX = mc.displayWidth / 4;
-        screenY = mc.displayHeight / 4;
+        //screenX = mc.displayWidth / 4;
+        //screenY = mc.displayHeight / 4;
+        screenX = 0;
+        screenY = 0;
     }
 
     public void drawLine(int x1, int y1, int x2, int y2, float width, int color)
