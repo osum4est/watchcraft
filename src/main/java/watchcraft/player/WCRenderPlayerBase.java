@@ -6,6 +6,7 @@ import api.player.render.RenderPlayerBase;
 import net.minecraft.entity.player.EntityPlayer;
 import org.lwjgl.opengl.GL11;
 import watchcraft.client.gui.GuiWatchBasicAnalog;
+import watchcraft.items.watch.ItemBasicWatchAnalog;
 import watchcraft.watch.WatchHandler;
 
 import javax.vecmath.Vector3f;
@@ -71,12 +72,15 @@ public class WCRenderPlayerBase extends RenderPlayerBase {
 
         super.renderFirstPersonArm(entityPlayer);
 
+        GL11.glScalef(.002f, .002f, .002f);
+        GL11.glTranslatef(-275, 250, 0);
+        GL11.glRotatef(90, 0, 1, 0);
+        GL11.glRotatef(90, 0, 0, -1);
         if (WatchHandler.watch != null) {
-            GL11.glScalef(.002f, .002f, .002f);
-            GL11.glTranslatef(-275, 250, 0);
-            GL11.glRotatef(90, 0, 1, 0);
-            GL11.glRotatef(90, 0, 0, -1);
-            WatchHandler.watch.getGui().drawScreen();
+            for (int i = 0; i < 10; i++) {
+                GL11.glTranslatef(0, 0, -1);
+                WatchHandler.watch.getGui().drawScreen();
+            }
         }
 
         /*

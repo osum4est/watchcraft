@@ -50,6 +50,7 @@ public class GuiWatchBasicAnalog extends GuiWatch {
         drawCenteredStringNoShadow("9", -radius, 0, 0x404040);
         drawCenteredStringNoShadow("11", (int) (ONEHALF * -radius), (int) (ROOTTHREEOVERTWO * -radius), 0x404040);
         drawCenteredStringNoShadow("10", (int) (ROOTTHREEOVERTWO * -radius), (int) (ONEHALF * -radius), 0x404040);
+        GL11.glTranslatef(0, 0, 1f);
     }
 
     enum WatchHand {
