@@ -99,7 +99,7 @@ key_key.txp99:22
 key_key.txp999:23
 key_key.txp99967:24
 key_key.tx543345p:19
-soundCategory_master:0.0
+soundCategory_master:1.0
 soundCategory_music:1.0
 soundCategory_record:1.0
 soundCategory_weather:1.0

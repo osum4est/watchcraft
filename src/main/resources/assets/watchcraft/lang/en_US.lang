@@ -1,6 +1,8 @@
 item.itemBasicWatchDigital.name=Basic Digital Watch
 item.itemBasicWatchAnalog.name=Basic Analog Watch
 
+item.itemBandRubber.name=Rubber Band
+
 tile.blockWatchmakersWorkbench.name=Watchmaker's Workbench
 
 key.viewWatch=View Watch

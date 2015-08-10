@@ -10,7 +10,7 @@ import net.minecraft.tileentity.TileEntity;
  */
 public class TEWatchmakersWorkbench extends TileEntity implements IInventory {
 
-    public ItemStack[] inventory = new ItemStack[1];
+    public ItemStack[] inventory = new ItemStack[15];
 
     @Override
     public int getSizeInventory() {

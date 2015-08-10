@@ -5,7 +5,7 @@ import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
-import watchcraft.items.ItemWatch;
+import watchcraft.items.watch.IWatch;
 import watchcraft.player.WatchInventory;
 
 /**
@@ -36,12 +36,7 @@ public class ContainerWatchInventory extends Container {
         }
 
         //Watch inventory
-        WCSlot.ISlotBlacklist watchSlot = new WCSlot.ISlotBlacklist() {
-            @Override
-            public boolean isWCItemValid(ItemStack itemStack) {
-                return itemStack.getItem() instanceof ItemWatch;
-            }
-        };
+        WCSlot.ISlotBlacklist watchSlot = (ItemStack i) -> { return i.getItem() instanceof IWatch; };
         addSlotToContainer(new WCSlot(watchInventory, 0, 80, 35, watchSlot));
     }
 

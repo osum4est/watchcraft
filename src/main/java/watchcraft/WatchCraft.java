@@ -16,10 +16,11 @@ import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
 import watchcraft.block.BlockWatchmakersWorkbench;
 import watchcraft.block.te.TEWatchmakersWorkbench;
-import watchcraft.client.gui.GuiWatchBasicDigital;
 import watchcraft.common.WCProxyCommon;
-import watchcraft.items.ItemBasicWatchAnalog;
-import watchcraft.items.ItemBasicWatchDigital;
+import watchcraft.items.band.IBand;
+import watchcraft.items.band.ItemBandRubber;
+import watchcraft.items.watch.ItemBasicWatchAnalog;
+import watchcraft.items.watch.ItemBasicWatchDigital;
 import watchcraft.network.SimplePacket;
 import watchcraft.network.WCPacketHandler;
 import watchcraft.player.WCModelPlayerBase;
@@ -40,6 +41,7 @@ public class WatchCraft
 
     public static Item itemBasicWatchDigital;
     public static Item itemBasicWatchAnalog;
+    public static Item itemBandRubber;
 
     public static Block blockWatchmakersWorkbench;
 
@@ -60,10 +62,12 @@ public class WatchCraft
 
         watchHandler = new WatchHandler();
 
-        itemBasicWatchDigital = new ItemBasicWatchDigital("itemBasicWatchDigital");
+        itemBasicWatchDigital = new ItemBasicWatchDigital("itemBasicWatchDigital", 1);
         GameRegistry.registerItem(itemBasicWatchDigital, itemBasicWatchDigital.getUnlocalizedName());
-        itemBasicWatchAnalog = new ItemBasicWatchAnalog("itemBasicWatchAnalog");
+        itemBasicWatchAnalog = new ItemBasicWatchAnalog("itemBasicWatchAnalog", 1);
         GameRegistry.registerItem(itemBasicWatchAnalog, itemBasicWatchAnalog.getUnlocalizedName());
+        itemBandRubber = new ItemBandRubber("itemBandRubber", 1);
+        GameRegistry.registerItem(itemBandRubber, itemBandRubber.getUnlocalizedName());
 
         blockWatchmakersWorkbench = new BlockWatchmakersWorkbench("blockWatchmakersWorkbench");
         GameRegistry.registerBlock(blockWatchmakersWorkbench, blockWatchmakersWorkbench.getUnlocalizedName());

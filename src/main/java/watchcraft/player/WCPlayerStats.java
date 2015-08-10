@@ -1,16 +1,13 @@
 package watchcraft.player;
 
-import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.world.World;
 import net.minecraftforge.common.IExtendedEntityProperties;
 import watchcraft.WatchCraft;
-import watchcraft.items.ItemWatch;
-import watchcraft.watch.WatchHandler;
+import watchcraft.items.watch.IWatch;
 
 /**
  * Created by osumf on 8/1/2015.
@@ -47,11 +44,11 @@ public class WCPlayerStats implements IExtendedEntityProperties {
         return (WCPlayerStats) player.getExtendedProperties(PROP_NAME);
     }
 
-    public static ItemWatch getWatch(EntityPlayer player)
+    public static IWatch getWatch(EntityPlayer player)
     {
         ItemStack item = get(player).watchInventory.inventory[0];
-        if (item != null && item.getItem() instanceof ItemWatch)
-            return (ItemWatch)item.getItem();
+        if (item != null && item.getItem() instanceof IWatch)
+            return (IWatch)item.getItem();
         return null;
     }
 

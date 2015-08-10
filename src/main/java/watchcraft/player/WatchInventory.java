@@ -4,7 +4,6 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 import watchcraft.WatchCraft;
-import watchcraft.items.ItemWatch;
 
 /**
  * Created by osumf on 7/31/2015.

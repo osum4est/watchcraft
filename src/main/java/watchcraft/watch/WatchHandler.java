@@ -1,9 +1,7 @@
 package watchcraft.watch;
 
 import net.minecraft.client.Minecraft;
-import net.minecraftforge.common.MinecraftForge;
-import watchcraft.client.gui.GuiWatch;
-import watchcraft.items.ItemWatch;
+import watchcraft.items.watch.IWatch;
 import watchcraft.player.WCPlayerStats;
 
 /**
@@ -13,7 +11,7 @@ public class WatchHandler {
 
 
     public static boolean isViewingWatch;
-    public static ItemWatch watch = null;
+    public static IWatch watch = null;
 
     //boolean isWatchOpen = false;
 
@@ -21,7 +19,7 @@ public class WatchHandler {
 
 //    public void openWatch()
 //    {
-//        ItemWatch watch = WCPlayerStats.getWatch(Minecraft.getMinecraft().thePlayer);
+//        IWatch watch = WCPlayerStats.getWatch(Minecraft.getMinecraft().thePlayer);
 //        if (watch != null) {
 //            if (!isWatchOpen)
 //                openWatchGui(watch);
@@ -35,7 +33,7 @@ public class WatchHandler {
         wearWatch(WCPlayerStats.getWatch(Minecraft.getMinecraft().thePlayer));
     }
 
-    public void wearWatch(ItemWatch watch)
+    public void wearWatch(IWatch watch)
     {
         if (watch == null)
             System.out.println("Watch is null");
@@ -50,7 +48,7 @@ public class WatchHandler {
 //        isWatchOpen = false;
 //    }
 //
-//    private void openWatchGui(ItemWatch watch)
+//    private void openWatchGui(IWatch watch)
 //    {
 //        System.out.println("attempting to open watch gui");
 //        guiWatch = watch.getGui();

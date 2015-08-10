@@ -4,7 +4,6 @@ package watchcraft.inventory;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
-import watchcraft.items.ItemWatch;
 
 /**
  * Created by osumf on 8/1/2015.
